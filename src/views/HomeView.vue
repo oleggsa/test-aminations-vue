@@ -1,5 +1,6 @@
 <template>
   <div class="main" @mousemove="mouseMove">
+    <BkgText />
     <div class="container">
       <Header />
       <div class="main-inner">
@@ -18,16 +19,18 @@
 import Header from "../components/Header.vue"
 import Menu from "../components/Menu.vue";
 import RoundAnim from "../components/RoundAnim.vue";
+import BkgText from "../components/BkgText.vue";
 
 export default {
-  components: {RoundAnim, Menu, Header},
+  components: {BkgText, RoundAnim, Menu, Header},
   methods: {
     mouseMove(event) {
       let x = event.clientX;
       let y = event.clientY;
+      const ratio = 2000;
       let text = document.querySelector('.text-main')
-      text.style.top = `${49.8 + y/2000}%`;
-      text.style.left = `${49.7 + x/2000}%`;
+      text.style.top = `${49.8 + y/ratio}%`;
+      text.style.left = `${49.7 + x/ratio}%`;
     }
   }
 }
