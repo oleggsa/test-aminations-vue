@@ -5,6 +5,11 @@
     font-family: 'GrtskGiga', sans-serif;
 }
 
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
 @font-face {
     font-family: GrtskGiga;
     src: url(./fonts/GrtskGiga-Semibold.woff2);
@@ -22,3 +27,39 @@
     font-weight: bold;
     font-style: italic;
 }
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes moveDiagonally {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveDiagonallySecond {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
+/*@keyframes moveDiagonallyReverse {*/
+/*    0%{*/
+/*        transform: translateX(-111%) rotate(180deg);*/
+/*    }*/
+/*    100%{*/
+/*        transform: translateX(89%) rotate(180deg);*/
+/*    }*/
+/*}*/
