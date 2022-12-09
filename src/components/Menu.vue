@@ -2,9 +2,30 @@
   <div>
     <nav class="menu">
       <ul>
-        <li class="item-1"><router-link class="hover-underline-animation" to="/test">where?</router-link></li>
-        <li class="item-2"><router-link class="hover-underline-animation" to="/test">who?</router-link></li>
-        <li class="item-3"><router-link class="hover-underline-animation" to="/test">what?</router-link></li>
+        <li class="item-1">
+          <router-link
+              class="hover-underline-animation"
+              to="/test"
+          >
+            where?
+          </router-link>
+        </li>
+        <li class="item-2">
+          <router-link
+              class="hover-underline-animation"
+              to="/test"
+          >
+            who?
+          </router-link>
+        </li>
+        <li class="item-3">
+          <router-link
+              class="hover-underline-animation"
+              to="/test"
+          >
+            what?
+          </router-link>
+        </li>
       </ul>
     </nav>
     <BurgerMenu />
