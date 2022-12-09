@@ -14,10 +14,10 @@ export default {
 
 <style lang="scss" scoped>
 .logo {
-    position: relative;
-    z-index: 2;
-}
-svg {
-    fill: red;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 </style>

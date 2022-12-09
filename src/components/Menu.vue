@@ -30,18 +30,28 @@ ul {
     }
   }
   .item-1 {
-    left: 0;
+    left: -20px;
     top: 50%;
-    transform: rotate(270deg);
+    transform: translateY(-50%) rotate(270deg);
+    @media (max-width: 1024px) {
+      left: -30px;
+    }
   }
   .item-2 {
     left: 50%;
-    bottom: 19px;
+    bottom: 20px;
+    transform: translateX(-50%);
+    @media (max-width: 1024px) {
+      bottom: 10px;
+    }
   }
   .item-3 {
-    right: 0;
+    right: -20px;
     top: 50%;
-    transform: rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
+    @media (max-width: 1024px) {
+      right: -30px;
+    }
   }
 }
 .hover-underline-animation {

@@ -1,12 +1,13 @@
 <template>
   <div class="main" @mousemove="mouseMove">
     <BkgText />
+    <LangSwitch />
+    <Header />
     <div class="container">
-      <Header />
       <div class="main-inner">
         <div class="center">
           <div class="text-main">FULL-CYCLE EVENT AGENCY</div>
-          <div class="circle"></div>
+          <BkgCircle />
         </div>
       </div>
       <Menu />
@@ -20,9 +21,11 @@ import Header from "../components/Header.vue"
 import Menu from "../components/Menu.vue";
 import RoundAnim from "../components/RoundAnim.vue";
 import BkgText from "../components/BkgText.vue";
+import LangSwitch from "../components/LangSwitch.vue";
+import BkgCircle from "../components/BkgCircle.vue";
 
 export default {
-  components: {BkgText, RoundAnim, Menu, Header},
+  components: {BkgCircle, LangSwitch, BkgText, RoundAnim, Menu, Header},
   methods: {
     mouseMove(event) {
       let x = event.clientX;
@@ -40,12 +43,8 @@ export default {
 .main {
   background: #BEBEBE;
   background-size: 100% 100%;
-  &-inner {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  overflow: hidden;
+  position: relative;
 }
 
 .text-main {
@@ -59,19 +58,17 @@ export default {
   width: 100%;
   max-width: 1024px;
   min-width: 300px;
-}
-.circle {
-  border-radius: 50%;
-  width: 578px;
-  height: 578px;
-  background: #FFCB46;
-  filter: blur(38px);
-  font-size: 30px;
+  @media (max-width: 1024px) {
+    font-size: 58px;
+    max-width: 800px;
+  }
 }
 
 .container {
   padding: 24px 19px 19px;
   height: 100vh;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

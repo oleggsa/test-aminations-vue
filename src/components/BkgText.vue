@@ -20,10 +20,11 @@ export default {
 <style lang="scss" scoped>
 .parent {
   position: absolute;
-  left:0;
-  top: 28%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-0.13turn);
   width: 2000px;
-  transform: rotate(155deg);
+  //transform: rotate(200);
 }
 
 .line1, .line2 {
