@@ -6,11 +6,14 @@
       <li class="item-3"><router-link class="hover-underline-animation" to="/test">what?</router-link></li>
     </ul>
   </nav>
+  <BurgerMenu />
 </template>
 
 <script>
+import BurgerMenu from "./BurgerMenu.vue";
 export default {
   name: "Menu",
+  components: {BurgerMenu},
 }
 </script>
 
