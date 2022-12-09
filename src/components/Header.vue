@@ -19,5 +19,13 @@ export default {
   top: 20px;
   transform: translateX(-50%);
   z-index: 2;
+  img {
+    @media (max-width: 1024px) {
+      width: 69px;
+    }
+    @media (max-width: 592px) {
+      width: 46px;
+    }
+  }
 }
 </style>

@@ -27,5 +27,15 @@ export default {
   img {
     opacity: 1;
   }
+  @media (max-width: 1024px) {
+    top: 18px;
+    left: 18px;
+    height: 34px;
+    width: 34px;
+  }
+  @media (max-width: 592px) {
+    top: 16px;
+    left: 16px;
+  }
 }
 </style>

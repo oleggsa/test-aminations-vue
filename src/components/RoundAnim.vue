@@ -15,15 +15,31 @@ export default {
 
 <style lang="scss" scoped>
 .round {
-  position: absolute;
+  position: fixed;
   z-index: 10;
-  left: 60%;
-  bottom: 15%;
+  bottom: 0;
+  right: 20px;
+  @media (max-width: 650px) {
+    bottom: -20px;
+    right: 60px;
+  }
+  @media (max-width: 592px) {
+    bottom: -20px;
+    right: 20px;
+  }
   &:hover {
     animation: rotation 3s infinite linear;
   }
   .text {
     position: relative;
+    img {
+      @media (max-width: 1024px) {
+        width: 109px;
+      }
+      @media (max-width: 592px) {
+        width: 87px;
+      }
+    }
     .dot {
       position: absolute;
       top: 50%;

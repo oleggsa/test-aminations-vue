@@ -46,6 +46,7 @@ export default {
 }
 
 .text-main {
+  color: #373737;
   font-size: 82px;
   position: absolute;
   z-index: 1;
@@ -54,19 +55,14 @@ export default {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
-  max-width: 1024px;
+  max-width: 1200px;
   min-width: 300px;
   padding: 25px;
-  //@media (max-width: 1100px) {
-  //  max-width: 968px;
-  //}
   @media (max-width: 1024px) {
     font-size: 58px;
     max-width: 800px;
+    padding: 20px;
   }
-  //@media (max-width: 768px) {
-  //  max-width: 700px;
-  //}
   @media (max-width: 592px) {
     font-size: 34px;
     max-width: 500px;
