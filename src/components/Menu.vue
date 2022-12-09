@@ -16,6 +16,9 @@ export default {
 
 <style lang="scss" scoped>
 ul {
+  @media (max-width: 592px) {
+    display: none;
+  }
   li {
     list-style-type: none;
     position: absolute;

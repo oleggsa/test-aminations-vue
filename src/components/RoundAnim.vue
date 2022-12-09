@@ -16,6 +16,7 @@ export default {
 <style lang="scss" scoped>
 .round {
   position: absolute;
+  z-index: 10;
   left: 60%;
   bottom: 15%;
   &:hover {

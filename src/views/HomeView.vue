@@ -11,7 +11,6 @@
         </div>
       </div>
       <Menu />
-      <RoundAnim />
     </div>
   </div>
 </template>
@@ -19,13 +18,12 @@
 <script>
 import Header from "../components/Header.vue"
 import Menu from "../components/Menu.vue";
-import RoundAnim from "../components/RoundAnim.vue";
 import BkgText from "../components/BkgText.vue";
 import LangSwitch from "../components/LangSwitch.vue";
 import BkgCircle from "../components/BkgCircle.vue";
 
 export default {
-  components: {BkgCircle, LangSwitch, BkgText, RoundAnim, Menu, Header},
+  components: {BkgCircle, LangSwitch, BkgText, Menu, Header},
   methods: {
     mouseMove(event) {
       let x = event.clientX;
@@ -58,17 +56,26 @@ export default {
   width: 100%;
   max-width: 1024px;
   min-width: 300px;
+  padding: 25px;
+  //@media (max-width: 1100px) {
+  //  max-width: 968px;
+  //}
   @media (max-width: 1024px) {
     font-size: 58px;
     max-width: 800px;
+  }
+  //@media (max-width: 768px) {
+  //  max-width: 700px;
+  //}
+  @media (max-width: 592px) {
+    font-size: 34px;
+    max-width: 500px;
   }
 }
 
 .container {
   padding: 24px 19px 19px;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 </style>
